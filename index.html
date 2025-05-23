@@ -1,11 +1,653 @@
-resourceContents.forEach(c => c.classList.add('hidden'));
+https://github.com/janeh-psy/Janeh-psy.github.io/tree/main<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رشد همراه | پشتیبانی روانشناسی کودک و نوجوان</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .soft-shadow {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+        .emoji-feedback:hover {
+            transform: scale(1.2);
+            transition: all 0.2s ease;
+        }
+    </style>
+</head>
+<body class="text-gray-700">
+    <!-- Navigation -->
+    <nav class="bg-white soft-shadow py-4 sticky top-0 z-50">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-semibold text-blue-400 flex items-center">
+                <span class="bg-blue-100 rounded-full p-2 ml-2">🌱</span>
+                رشد همراه
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-blue-500 hover:text-blue-700 transition">خانه</a>
+                <a href="#about" class="hover:text-blue-500 transition">درباره من</a>
+                <a href="#services" class="hover:text-blue-500 transition">خدمات</a>
+                <a href="#resources" class="hover:text-blue-500 transition">منابع</a>
+                <a href="#contact" class="hover:text-blue-500 transition">پرسش شما</a>
+            </div>
+            <button class="md:hidden text-blue-500" id="menu-toggle">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden bg-white py-2 px-4" id="mobile-menu">
+            <a href="#home" class="block py-2 text-blue-500">خانه</a>
+            <a href="#about" class="block py-2">درباره من</a>
+            <a href="#services" class="block py-2">خدمات</a>
+            <a href="#resources" class="block py-2">منابع</a>
+            <a href="#contact" class="block py-2">پرسش شما</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg py-16 md:py-24 fade-in">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">در این سفر تنها نیستید</h1>
+                <p class="text-xl text-gray-600 mb-8">حمایت از کودکان، نوجوانان و والدین در چالش‌های زیبای رشد. بیایید با همدلی و درک این مسیر را طی کنیم.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#contact" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-full text-center transition shadow-md">پرسش خود را بپرسید</a>
+                    <a href="#services" class="bg-pink-400 hover:bg-pink-500 text-white px-6 py-3 rounded-full text-center transition shadow-md">مشاهده خدمات</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="والد و کودک در حال مطالعه" class="rounded-lg soft-shadow w-full max-w-md">
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Help Section -->
+    <section class="bg-white py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">حمایت عاطفی سریع</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-blue-50 p-6 rounded-xl soft-shadow card-hover">
+                    <div class="text-blue-500 text-4xl mb-4">😊</div>
+                    <h3 class="text-xl font-semibold mb-3">برای والدین</h3>
+                    <p class="text-gray-600 mb-4">احساس فشار می‌کنید؟ نفس عمیق بکشید. شما بهتر از آنچه فکر می‌کنید عمل می‌کنید.</p>
+                    <a href="#resources" class="text-blue-500 hover:underline">منابع فرزندپروری →</a>
+                </div>
+                <div class="bg-green-50 p-6 rounded-xl soft-shadow card-hover">
+                    <div class="text-green-500 text-4xl mb-4">🧒</div>
+                    <h3 class="text-xl font-semibold mb-3">برای کودکان</h3>
+                    <p class="text-gray-600 mb-4">احساسات شدید طبیعی است. گاهی اوقات خوب نبودن هم اشکالی ندارد.</p>
+                    <a href="#resources" class="text-green-500 hover:underline">ابزارهای مناسب کودکان →</a>
+                </div>
+                <div class="bg-pink-50 p-6 rounded-xl soft-shadow card-hover">
+                    <div class="text-pink-500 text-4xl mb-4">👱‍♀️</div>
+                    <h3 class="text-xl font-semibold mb-3">برای نوجوانان</h3>
+                    <p class="text-gray-600 mb-4">احساسات شما معتبر است. این دوره همیشگی نخواهد بود.</p>
+                    <a href="#resources" class="text-pink-500 hover:underline">حمایت از نوجوانان →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="تصویر حرفه‌ای" class="rounded-full w-64 h-64 object-cover soft-shadow">
+                </div>
+                <div class="md:w-2/3 md:pr-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">سلام، من دکتر سارا هستم</h2>
+                    <p class="text-lg text-gray-600 mb-6">با بیش از ۱۵ سال تجربه در روانشناسی تربیتی، حرفه‌ام را به کمک به خانواده‌ها در مواجهه با پیچیدگی‌های زیبای رشد اختصاص داده‌ام. رویکرد من ترکیبی از تخصص حرفه‌ای و مراقبت و درک واقعی است.</p>
+                    <p class="text-lg text-gray-600 mb-6">من معتقدم هر کودک و والد نقاط قوت منحصر به فردی دارد. نقش من کمک به شما برای کشف و پرورش این نقاط قوت و ارائه ابزارهای عملی برای چالش‌هایی است که همه با آن روبرو می‌شویم.</p>
+                    <div class="bg-white p-6 rounded-lg soft-shadow">
+                        <h3 class="text-xl font-semibold mb-3 text-blue-500">مدارک و صلاحیت‌ها</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <span class="text-green-500 ml-2">✓</span>
+                                <span>دکترای روانشناسی تربیتی، دانشگاه تورنتو</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-500 ml-2">✓</span>
+                                <span>درمانگر دارای مجوز کودک و نوجوان</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-500 ml-2">✓</span>
+                                <span>مربی فرزندپروری دارای گواهینامه</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-500 ml-2">✓</span>
+                                <span>نویسنده کتاب "درک دنیای عاطفی کودک شما"</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">چگونه می‌توانم کمک کنم</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-blue-50 rounded-xl overflow-hidden soft-shadow card-hover">
+                    <div class="h-48 bg-blue-100 flex items-center justify-center">
+                        <span class="text-6xl">👶</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3 text-blue-600">درمان کودک (۴-۱۲ سال)</h3>
+                        <p class="text-gray-600 mb-4">درمان مبتنی بر بازی برای کمک به کودکان در بیان احساسات، ایجاد انعطاف‌پذیری و توسعه مکانیسم‌های مقابله سالم.</p>
+                        <ul class="space-y-2 mb-4">
+                            <li class="flex items-start">
+                                <span class="text-blue-400 ml-2">•</span>
+                                <span>اضطراب و استرس مدرسه</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-400 ml-2">•</span>
+                                <span>چالش‌های رفتاری</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-400 ml-2">•</span>
+                                <span>توسعه مهارت‌های اجتماعی</span>
+                            </li>
+                        </ul>
+                        <button class="text-blue-500 hover:underline">اطلاعات بیشتر →</button>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-green-50 rounded-xl overflow-hidden soft-shadow card-hover">
+                    <div class="h-48 bg-green-100 flex items-center justify-center">
+                        <span class="text-6xl">👩‍🎓</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3 text-green-600">مشاوره نوجوانان</h3>
+                        <p class="text-gray-600 mb-4">حمایت از نوجوانان در مواجهه با هویت، روابط، فشار تحصیلی و تنظیم عواطف.</p>
+                        <ul class="space-y-2 mb-4">
+                            <li class="flex items-start">
+                                <span class="text-green-400 ml-2">•</span>
+                                <span>اعتماد به نفس و تصویر بدن</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-400 ml-2">•</span>
+                                <span>رسانه‌های اجتماعی و رفاه دیجیتال</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-400 ml-2">•</span>
+                                <span>اضطراب برنامه‌ریزی آینده</span>
+                            </li>
+                        </ul>
+                        <button class="text-green-500 hover:underline">اطلاعات بیشتر →</button>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-pink-50 rounded-xl overflow-hidden soft-shadow card-hover">
+                    <div class="h-48 bg-pink-100 flex items-center justify-center">
+                        <span class="text-6xl">👪</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3 text-pink-600">مربیگری والدین</h3>
+                        <p class="text-gray-600 mb-4">راهنمایی برای کمک به شما در فرزندپروری با اعتماد به نفس، تعیین مرزهای سالم و تقویت ارتباطات خانوادگی.</p>
+                        <ul class="space-y-2 mb-4">
+                            <li class="flex items-start">
+                                <span class="text-pink-400 ml-2">•</span>
+                                <span>استراتژی‌های انضباط مثبت</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-pink-400 ml-2">•</span>
+                                <span>راهکارهای رقابت خواهر و برادر</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-pink-400 ml-2">•</span>
+                                <span>تعادل کار و خانواده</span>
+                            </li>
+                        </ul>
+                        <button class="text-pink-500 hover:underline">اطلاعات بیشتر →</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <a href="#contact" class="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-full inline-block transition shadow-md">رزرو جلسه</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">منابع مفید</h2>
+            
+            <!-- Resource Tabs -->
+            <div class="flex justify-center mb-8">
+                <div class="inline-flex rounded-full bg-white p-1 soft-shadow">
+                    <button class="resource-tab px-4 py-2 rounded-full bg-blue-500 text-white" data-tab="articles">مقالات</button>
+                    <button class="resource-tab px-4 py-2 rounded-full hover:bg-gray-100 transition" data-tab="videos">ویدیوها</button>
+                    <button class="resource-tab px-4 py-2 rounded-full hover:bg-gray-100 transition" data-tab="downloads">دانلودها</button>
+                </div>
+            </div>
+            
+            <!-- Articles Content (Default visible) -->
+            <div id="articles-content" class="resource-content">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Article 1 -->
+                    <div class="bg-white rounded-xl overflow-hidden soft-shadow card-hover">
+                        <div class="h-48 bg-blue-100 flex items-center justify-center">
+                            <span class="text-6xl">📚</span>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center text-sm text-gray-500 mb-2">
+                                <span>فرزندپروری</span>
+                                <span class="mx-2">•</span>
+                                <span>۱۵ اردیبهشت ۱۴۰۲</span>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3">۱۰ راه برای کمک به کودک مضطرب شما</h3>
+                            <p class="text-gray-600 mb-4">استراتژی‌های عملی برای حمایت از کودکان در مواجهه با اضطراب، از کج‌خلقی کودکان نوپا تا امتناع از مدرسه.</p>
+                            <a href="#" class="text-blue-500 hover:underline">مطالعه مقاله →</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Article 2 -->
+                    <div class="bg-white rounded-xl overflow-hidden soft-shadow card-hover">
+                        <div class="h-48 bg-green-100 flex items-center justify-center">
+                            <span class="text-6xl">📱</span>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center text-sm text-gray-500 mb-2">
+                                <span>نوجوانان</span>
+                                <span class="mx-2">•</span>
+                                <span>۲۸ فروردین ۱۴۰۲</span>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3">حرکت در رسانه‌های اجتماعی با نوجوان شما</h3>
+                            <p class="text-gray-600 mb-4">چگونه مرزهای سالم حول زمان صفحه نمایش تعیین کنیم بدون آسیب زدن به رابطه.</p>
+                            <a href="#" class="text-green-500 hover:underline">مطالعه مقاله →</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Article 3 -->
+                    <div class="bg-white rounded-xl overflow-hidden soft-shadow card-hover">
+                        <div class="h-48 bg-pink-100 flex items-center justify-center">
+                            <span class="text-6xl">🧠</span>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center text-sm text-gray-500 mb-2">
+                                <span>رشد</span>
+                                <span class="mx-2">•</span>
+                                <span>۱۰ اسفند ۱۴۰۱</span>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3">درک رشد عاطفی کودک شما</h3>
+                            <p class="text-gray-600 mb-4">راهنمای مرحله به مرحله آنچه در مغز کودک شما اتفاق می‌افتد و چگونه پاسخ دهید.</p>
+                            <a href="#" class="text-pink-500 hover:underline">مطالعه مقاله →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-8 text-center">
+                    <a href="#" class="text-blue-500 hover:underline">مشاهده همه مقالات →</a>
+                </div>
+            </div>
+            
+            <!-- Videos Content (Hidden by default) -->
+            <div id="videos-content" class="resource-content hidden">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Video 1 -->
+                    <div class="bg-white rounded-xl overflow-hidden soft-shadow">
+                        <div class="aspect-w-16 aspect-h-9 bg-gray-200 flex items-center justify-center">
+                            <span class="text-6xl">▶️</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-3">تکنیک‌های آرام‌سازی برای کودکان</h3>
+                            <p class="text-gray-600 mb-4">تمرینات تنفسی ساده و فعالیت‌های ذهن‌آگاهی که می‌توانید با کودک خود انجام دهید.</p>
+                            <a href="#" class="text-blue-500 hover:underline">تماشای ویدیو →</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Video 2 -->
+                    <div class="bg-white rounded-xl overflow-hidden soft-shadow">
+                        <div class="aspect-w-16 aspect-h-9 bg-gray-200 flex items-center justify-center">
+                            <span class="text-6xl">▶️</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-3">مغز نوجوان توضیح داده شد</h3>
+                            <p class="text-gray-600 mb-4">چرا نوجوانان اینگونه رفتار می‌کنند و چگونه مؤثرتر ارتباط برقرار کنیم.</p>
+                            <a href="#" class="text-blue-500 hover:underline">تماشای ویدیو →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Downloads Content (Hidden by default) -->
+            <div id="downloads-content" class="resource-content hidden">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Download 1 -->
+                    <div class="bg-white rounded-xl p-6 soft-shadow flex flex-col">
+                        <div class="text-5xl mb-4 text-blue-500">📝</div>
+                        <h3 class="text-xl font-semibold mb-3">چرخ احساسات برای کودکان</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">ابزار قابل چاپ برای کمک به کودکان در شناسایی و بیان احساساتشان.</p>
+                        <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full self-start transition">دانلود PDF</button>
+                    </div>
+                    
+                    <!-- Download 2 -->
+                    <div class="bg-white rounded-xl p-6 soft-shadow flex flex-col">
+                        <div class="text-5xl mb-4 text-green-500">📋</div>
+                        <h3 class="text-xl font-semibold mb-3">قرارداد ارتباط نوجوان-والد</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">قالب برای ایجاد مرزهای دیجیتال سالم با هم.</p>
+                        <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full self-start transition">دانلود PDF</button>
+                    </div>
+                    
+                    <!-- Download 3 -->
+                    <div class="bg-white rounded-xl p-6 soft-shadow flex flex-col">
+                        <div class="text-5xl mb-4 text-pink-500">📅</div>
+                        <h3 class="text-xl font-semibold mb-3">برنامه‌ریز روال خانوادگی</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">قالب‌های برنامه‌ریز قابل تنظیم برای صبح‌ها و زمان خواب آرام‌تر.</p>
+                        <button class="bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-full self-start transition">دانلود PDF</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-blue-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">نظرات خانواده‌ها</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-xl soft-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="text-3xl ml-4">⭐️⭐️⭐️⭐️⭐️</div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">"دکتر سارا به ما کمک کرد اضطراب پسرمان را به گونه‌ای درک کنیم که هیچ کس دیگر نتوانسته بود. استراتژی‌های عملی او بلافاصله در زندگی خانه ما تغییر ایجاد کرد."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center ml-4">
+                            <span class="text-xl">👩</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">لیلا م.</h4>
+                            <p class="text-sm text-gray-500">مادر کودک ۸ ساله</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-xl soft-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="text-3xl ml-4">⭐️⭐️⭐️⭐️⭐️</div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">"در ابتدا نسبت به درمان تردید داشتم، اما دکتر سارا باعث شد احساس کنم شنیده و درک می‌شوم. او به من ابزارهایی داد که واقعاً برای مدیریت استرسم مؤثر بودند."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center ml-4">
+                            <span class="text-xl">👦</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">یعقوب ت.</h4>
+                            <p class="text-sm text-gray-500">مراجع ۱۶ ساله</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 max-w-3xl">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">پرسش‌های متداول</h2>
+            
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="faq-question w-full text-right p-4 bg-gray-50 hover:bg-gray-100 transition flex justify-between items-center">
+                        <span class="font-medium">چگونه بفهمم کودکم به درمان نیاز دارد؟</span>
+                        <span class="text-blue-500 text-xl">+</span>
+                    </button>
+                    <div class="faq-answer p-4 hidden">
+                        <p class="text-gray-600">هر کودک از مراحل چالش‌برانگیز عبور می‌کند، اما در این موارد درمان را در نظر بگیرید: اگر احساساتشان به طور منظم زندگی روزمره را مختل می‌کند، تجربه از دست دادن یا آسیب قابل توجهی داشته‌اند، رفتارشان به شدت تغییر کرده است، یا اگر احساس ناامیدی بیان می‌کنند. به غریزه خود اعتماد کنید - اگر نگران هستید، ارزش بررسی دارد.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="faq-question w-full text-right p-4 bg-gray-50 hover:bg-gray-100 transition flex justify-between items-center">
+                        <span class="font-medium">آیا به من می‌گویید نوجوانم در جلسات چه می‌گوید؟</span>
+                        <span class="text-blue-500 text-xl">+</span>
+                    </button>
+                    <div class="faq-answer p-4 hidden">
+                        <p class="text-gray-600">رازداری برای ایجاد اعتماد با نوجوانان بسیار مهم است. در حالی که محتوای بیشتر جلسات خصوصی می‌ماند، اگر نگرانی درباره ایمنی وجود داشته باشد، رازداری را نقض می‌کنم. با اجازه نوجوان شما، خوشحال می‌شوم مضامین کلی را به اشتراک بگذارم و در مورد راه‌هایی که می‌توانید در خانه از آنها حمایت کنید همکاری کنم.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="faq-question w-full text-right p-4 bg-gray-50 hover:bg-gray-100 transition flex justify-between items-center">
+                        <span class="font-medium">درمان معمولاً چقدر طول می‌کشد؟</span>
+                        <span class="text-blue-500 text-xl">+</span>
+                    </button>
+                    <div class="faq-answer p-4 hidden">
+                        <p class="text-gray-600">هر موقعیت منحصر به فرد است. برخی خانواده‌ها در ۴-۶ جلسه با استراتژی‌های رفتاری خاص بهبود می‌بینند، در حالی که مسائل عمیق‌تر ممکن است چندین ماه طول بکشد. من به طور منظم با مراجعان چک می‌کنم تا پیشرفت را ارزیابی کنم و در صورت نیاز رویکردمان را تنظیم کنم.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="faq-question w-full text-right p-4 bg-gray-50 hover:bg-gray-100 transition flex justify-between items-center">
+                        <span class="font-medium">آیا جلسات مجازی ارائه می‌دهید؟</span>
+                        <span class="text-blue-500 text-xl">+</span>
+                    </button>
+                    <div class="faq-answer p-4 hidden">
+                        <p class="text-gray-600">بله! من جلسات ویدیویی امن برای خانواده‌هایی که ترجیح می‌دهند از خانه ملاقات کنند یا چالش‌های برنامه‌ریزی دارند ارائه می‌دهم. برای کودکان خردسال، در صورت امکان جلسات حضوری را توصیه می‌کنم، زیرا درمان بازی به بهترین شکل رو در رو عمل می‌کند.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-8 text-center">
+                <a href="#contact" class="text-blue-500 hover:underline">سوال دیگری دارید؟ مستقیماً از من بپرسید →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="bg-white rounded-xl soft-shadow overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2 bg-blue-500 p-8 text-white">
+                        <h2 class="text-3xl font-bold mb-6">بیایید صحبت کنیم</h2>
+                        <p class="mb-6">چه نگرانی خاصی داشته باشید و چه فقط نیاز به راهنمایی داشته باشید، من اینجا هستم تا بدون قضاوت گوش دهم.</p>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <span class="text-2xl ml-4">📧</span>
+                                <div>
+                                    <h3 class="font-semibold">ایمیل</h3>
+                                    <p>hello@growingtogether.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-2xl ml-4">📞</span>
+                                <div>
+                                    <h3 class="font-semibold">تلفن</h3>
+                                    <p>۵۵۵ ۱۲۳ ۴۵۶۷</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-2xl ml-4">🏢</span>
+                                <div>
+                                    <h3 class="font-semibold">دفتر</h3>
+                                    <p>خیابان درمان ۱۲۳، سوئیت ۴۵۶<br>تورنتو، انتاریو M5V 2H1</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-6">ارسال پیام</h3>
+                        <form id="contact-form">
+                            <div class="mb-4">
+                                <label for="name" class="block text-gray-700 mb-2">نام شما</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-gray-700 mb-2">ایمیل</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div class="mb-4">
+                                <label for="role" class="block text-gray-700 mb-2">شما هستید...</label>
+                                <select id="role" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                    <option value="">انتخاب کنید</option>
+                                    <option value="parent">والد</option>
+                                    <option value="teen">نوجوان</option>
+                                    <option value="educator">مربی</option>
+                                    <option value="other">سایر</option>
+                                </select>
+                            </div>
+                            <div class="mb-4">
+                                <label for="message" class="block text-gray-700 mb-2">پیام شما</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-blue-500 hover:bg-blue-600 text-white py-3 rounded-lg transition shadow-md">ارسال پیام</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emotional Check-in -->
+    <section class="py-12 bg-pink-50">
+        <div class="container mx-auto px-4 max-w-2xl text-center">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">امروز چه احساسی دارید؟</h2>
+            <p class="text-gray-600 mb-8">لحظه‌ای وقت بگذارید تا با خودتان چک کنید. اشکالی ندارد هرچه را تجربه می‌کنید تصدیق کنید.</p>
+            
+            <div class="flex justify-center space-x-4 mb-8">
+                <button class="emoji-feedback bg-white p-4 rounded-full soft-shadow" data-feeling="great">😊</button>
+                <button class="emoji-feedback bg-white p-4 rounded-full soft-shadow" data-feeling="okay">😐</button>
+                <button class="emoji-feedback bg-white p-4 rounded-full soft-shadow" data-feeling="stressed">😟</button>
+                <button class="emoji-feedback bg-white p-4 rounded-full soft-shadow" data-feeling="sad">😢</button>
+                <button class="emoji-feedback bg-white p-4 rounded-full soft-shadow" data-feeling="angry">😠</button>
+            </div>
+            
+            <div id="feedback-response" class="hidden bg-white p-6 rounded-lg soft-shadow">
+                <p class="text-gray-700" id="response-text"></p>
+                <div class="mt-4" id="resource-suggestion"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-12 bg-blue-500 text-white">
+        <div class="container mx-auto px-4 max-w-2xl text-center">
+            <h2 class="text-2xl font-bold mb-6">نکات فرزندپروری ملایم در صندوق ورودی شما</h2>
+            <p class="mb-8">بینش‌های ماهانه، استراتژی‌های عملی و تشویق برای سفر فرزندپروری خود را دریافت کنید.</p>
+            <form class="flex flex-col sm:flex-row gap-4 justify-center">
+                <input type="email" placeholder="آدرس ایمیل شما" class="px-4 py-3 rounded-lg flex-grow max-w-md text-gray-800 focus:outline-none">
+                <button type="submit" class="bg-white text-blue-500 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition shadow-md">عضویت</button>
+            </form>
+            <p class="mt-4 text-sm opacity-80">هرگز اسپم نخواهید داشت. هر زمان می‌توانید لغو اشتراک کنید.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 flex items-center">
+                        <span class="bg-blue-100 text-blue-500 rounded-full p-2 mr-2">🌱</span>
+                        رشد همراه
+                    </h3>
+                    <p class="text-gray-400">حمایت از خانواده‌ها در چالش‌های زیبای رشد.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">لینک‌های سریع</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition">خانه</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition">درباره من</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition">خدمات</a></li>
+                        <li><a href="#resources" class="text-gray-400 hover:text-white transition">منابع</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">قانونی</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">سیاست حفظ حریم خصوصی</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">شرایط خدمات</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">سلب مسئولیت</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">ارتباط</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-gray-700 hover:bg-gray-600 w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <span class="text-lg">📱</span>
+                        </a>
+                        <a href="#" class="bg-gray-700 hover:bg-gray-600 w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <span class="text-lg">📧</span>
+                        </a>
+                        <a href="#" class="bg-gray-700 hover:bg-gray-600 w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <span class="text-lg">🎥</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>© ۱۴۰۲ رشد همراه. تمامی حقوق محفوظ است.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 left-8 bg-blue-500 text-white p-3 rounded-full shadow-lg hidden">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+    </button>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Resource tabs
+        const resourceTabs = document.querySelectorAll('.resource-tab');
+        const resourceContents = document.querySelectorAll('.resource-content');
+        
+        resourceTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remove active state from all tabs
+                resourceTabs.forEach(t => t.classList.remove('bg-blue-500', 'text-white'));
+                resourceContents.forEach(c => c.classList.add('hidden'));
                 
                 // Add active state to clicked tab
                 tab.classList.add('bg-blue-500', 'text-white');
                 
                 // Show corresponding content
                 const tabName = tab.getAttribute('data-tab');
-                document.getElementById(${tabName}-content).classList.remove('hidden');
+                document.getElementById(`${tabName}-content`).classList.remove('hidden');
             });
         });
 
@@ -88,4 +730,4 @@ resourceContents.forEach(c => c.classList.add('hidden'));
         });
     </script>
 </body>
-</html>
+  </html>
