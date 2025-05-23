@@ -1,0 +1,91 @@
+resourceContents.forEach(c => c.classList.add('hidden'));
+                
+                // Add active state to clicked tab
+                tab.classList.add('bg-blue-500', 'text-white');
+                
+                // Show corresponding content
+                const tabName = tab.getAttribute('data-tab');
+                document.getElementById(${tabName}-content).classList.remove('hidden');
+            });
+        });
+
+        // FAQ accordion
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const plusSign = question.querySelector('span:last-child');
+                
+                // Toggle answer visibility
+                answer.classList.toggle('hidden');
+                
+                // Toggle plus/minus sign
+                if (answer.classList.contains('hidden')) {
+                    plusSign.textContent = '+';
+                } else {
+                    plusSign.textContent = '-';
+                }
+            });
+        });
+
+        // Emotional check-in feedback
+        const emojiFeedbacks = document.querySelectorAll('.emoji-feedback');
+        const feedbackResponse = document.getElementById('feedback-response');
+        const responseText = document.getElementById('response-text');
+        const resourceSuggestion = document.getElementById('resource-suggestion');
+        
+        const responses = {
+            great: "شنیدن این خبر عالی است! این لحظات خوب را جشن بگیرید - آنها به اندازه لحظات چالش‌برانگیز مهم هستند.",
+            okay: "احساس فقط خوب بودن اشکالی ندارد. هر روز نمی‌تواند فوق‌العاده باشد و این کاملاً طبیعی است.",
+            stressed: "استرس می‌تواند طاقت‌فرسا باشد. به یاد داشته باشید نفس بکشید - شما بهتر از آنچه فکر می‌کنید عمل می‌کنید. آیا مایلید برخی تکنیک‌های آرام‌سازی را یاد بگیرید؟",
+            sad: "متأسفم که این احساس را دارید. غم یک احساس معتبر است و لازم نیست به تنهایی از آن عبور کنید.",
+            angry: "خشم یک احساس طبیعی است. آنچه مهم است نحوه بیان آن است. آیا مایلید برخی استراتژی‌ها برای بیان سالم یاد بگیرید؟"
+        };
+        
+        const resourceLinks = {
+            stressed: '<a href="#resources" class="text-blue-500 hover:underline">مشاهده منابع مدیریت استرس →</a>',
+            sad: '<a href="#resources" class="text-blue-500 hover:underline">کاوش ابزارهای حمایت عاطفی →</a>',
+            angry: '<a href="#resources" class="text-blue-500 hover:underline">یادگیری تکنیک‌های مدیریت خشم →</a>',
+            default: ''
+        };
+        
+        emojiFeedbacks.forEach(emoji => {
+            emoji.addEventListener('click', () => {
+                const feeling = emoji.getAttribute('data-feeling');
+                responseText.textContent = responses[feeling];
+                
+                if (['stressed', 'sad', 'angry'].includes(feeling)) {
+                    resourceSuggestion.innerHTML = resourceLinks[feeling];
+                } else {
+                    resourceSuggestion.innerHTML = resourceLinks.default;
+                }
+                
+                feedbackResponse.classList.remove('hidden');
+            });
+        });
+
+        // Back to top button
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('hidden');
+            } else {
+                backToTopButton.classList.add('hidden');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Form submission
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('از پیام شما متشکرم! به زودی با شما تماس خواهم گرفت.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
